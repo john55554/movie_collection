@@ -18,8 +18,10 @@ Introduction:
 The Movie Collection API creates, updates and deletes a collection of films.
 
 Overview:
-Currently no authentication needed. Authentication to be added in the next version.
+Authentication must be set in the request header in a key value pair:
 
+key                   value
+x-api-key            ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
 
 Status Codes:
 200 status code = successful. 
@@ -31,19 +33,23 @@ Only single requests can be made at present.
 
 
 Endpoints:
+Get movies with:
 GET https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 GET /prod/movies HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
+x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
 Cache-Control: no-cache
 Postman-Token: 02b60508-5b01-8eb8-7e7b-e1173804b287
 
 
 
+Add movies with:
 POST https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 POST /prod/movies HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
+x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
 Content-Type: application/json
 Cache-Control: no-cache
 
@@ -55,3 +61,27 @@ Sample Request Body:
   "release": "1900",
   "rating": "0"
 }
+
+
+Update movies with:
+PUT https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
+
+PUT /prod/movies HTTP/1.1
+Host: myq7rts159.execute-api.us-west-2.amazonaws.com
+x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 408ac00d-9c82-ef62-e7f2-0e71bc8aed4f
+
+Sample Request Body (** must include id property and a valid id **):
+   {
+        "length": "30",
+        "id": "d7c3dba0-6354-11e8-a7d2-a54700c1805c",
+        "release": "1920",
+        "rating": "07",
+        "format": "Streaming",
+        "title": "Movie Title"
+    }
+
+
+
