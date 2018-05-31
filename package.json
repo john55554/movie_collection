@@ -1,0 +1,24 @@
+{
+  "name": "movie_collection",
+  "version": "1.0.0",
+  "description": "An application that creates, updates and deletes a collection of movies.",
+  "main": "read.js",
+  "dependencies": {
+    "aws-sdk": "^2.249.1",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queryne/movie_collection.git"
+  },
+  "author": "Corinne Phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queryne/movie_collection/issues"
+  },
+  "homepage": "https://github.com/queryne/movie_collection#readme"
+}

@@ -18,7 +18,7 @@ Introduction:
 The Movie Collection API creates, updates and deletes a collection of films.
 
 Overview:
-Authentication must be set in the request header in a key value pair:
+Authentication must be set in the request header with the following api key:
 
 key                   value
 x-api-key            ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
@@ -63,7 +63,7 @@ Sample Request Body:
 }
 
 
-Update movies with:
+Update a movie with:
 PUT https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 PUT /prod/movies HTTP/1.1
@@ -83,5 +83,15 @@ Sample Request Body (** must include id property and a valid id **):
         "title": "Movie Title"
     }
 
+
+Delete a movie with:
+DELETE https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies/{id}
+
+DELETE /prod/movies/{id} HTTP/1.1
+Host: myq7rts159.execute-api.us-west-2.amazonaws.com
+x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Postman-Token: ac29d677-a5e1-3c47-a1bc-e0c25ff0816b
 
 
