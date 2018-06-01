@@ -15,6 +15,7 @@ api.startApiCall(function(error, body){
     else{
      movieResults  = body.results;  
      
+     /*Ideally we should loop over the movieResults object and populate the params variable before inserting */
      var params = {
         RequestItems: {
           "movie_collection": [
