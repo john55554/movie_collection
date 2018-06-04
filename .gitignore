@@ -29,5 +29,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# config
+./config/config.json
+
 
 # End of https://www.gitignore.io/api/node
