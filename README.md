@@ -18,10 +18,10 @@ Introduction:
 The Movie Collection API creates, updates and deletes a collection of films.
 
 Overview:
-Authentication must be set in the request header with the following api key:
+Authentication must be set in the request header with the following an api key. 
 
 key                   value
-x-api-key            ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+x-api-key            {key value}
 
 Status Codes:
 200 status code = successful. 
@@ -38,7 +38,7 @@ GET https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 GET /prod/movies HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
-x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+x-api-key: {key value}
 Cache-Control: no-cache
 Postman-Token: 02b60508-5b01-8eb8-7e7b-e1173804b287
 
@@ -49,7 +49,7 @@ POST https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 POST /prod/movies HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
-x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+x-api-key:  {key value}
 Content-Type: application/json
 Cache-Control: no-cache
 
@@ -68,7 +68,7 @@ PUT https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies
 
 PUT /prod/movies HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
-x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+x-api-key:  {key value}
 Content-Type: application/json
 Cache-Control: no-cache
 Postman-Token: 408ac00d-9c82-ef62-e7f2-0e71bc8aed4f
@@ -89,7 +89,7 @@ DELETE https://myq7rts159.execute-api.us-west-2.amazonaws.com/prod/movies/{id}
 
 DELETE /prod/movies/{id} HTTP/1.1
 Host: myq7rts159.execute-api.us-west-2.amazonaws.com
-x-api-key: ERDF2PKXIF1G9Voxu02Qz7eqUwcR7kG21A2yd418
+x-api-key:  {key value}
 Content-Type: application/x-www-form-urlencoded
 Cache-Control: no-cache
 Postman-Token: ac29d677-a5e1-3c47-a1bc-e0c25ff0816b
